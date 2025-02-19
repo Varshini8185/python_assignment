@@ -223,6 +223,7 @@
 #  print nth fibnocci number 
 # print non-fibnocci numbers  in  given range  -(1 to 100) 
 # reverse a num  in  negative numbers
+
 # 17/02/2025
 # 1) sum of elements in a list
 # list = list(map(int,input().split()))
@@ -236,7 +237,6 @@
 # 6)Wap to check if each number in an  list contains duplicate digits, returning true for duplicates and false for unique digits.
 # numbers = list(map(int, input("Enter numbers separated by space: ").split()))
 # result = []
-
 # for num in numbers:
 #     num_str = str(num)  
 #     if len(num_str) != len(set(num_str)):  
@@ -246,8 +246,55 @@
 # print(result)
 
 # 15)reverse an array
-# list = list(map(int,input().split()))
+# ṃethod-1
+# list = list(map(int,input("enter some numbers with some space").split()))
 # print(list[::-1])
-# list = list(map(int,input().split()))
+# method-2
+# list = list(map(int,input("enter some numbers with some space").split()))
 # list.reverse()
 # print(list)
+# method-3
+# list = [1,2,3,"varshini"]
+# res = []
+# for i in list:
+#     res.insert(0,i)
+# list = res
+# print(res)  
+# method-4
+# low = 0 
+# high = len(list) -1 
+# while low < high:
+#     list[low],list[high] = list[high],list[low]
+#     low += 1
+#     high -= 1
+# print(list)
+# method-5
+# num = int(input("Enter a number: "))  
+# rev = 0
+# sum=0
+# while num > 0:
+#     digit = num % 10 
+#     sum=sum+digit
+#     rev = rev * 10 + digit  
+#     num = num // 10  
+# print("Reversed number:", rev)
+# print(sum)
+
+# 18/02/2025
+#def sum_of_digits(arr):
+#     result = []
+#     for num in arr:
+#         digit_sum = 0
+#         for digit in str(num):
+#             digit_sum += int(digit)
+#         result.append(digit_sum)
+#     return result
+# input_list = [202, 89, 112, 88]
+# output_list = sum_of_digits(input_list)
+# print("Output:", output_list)
+# arr = [10, 30, 10, 20, 10, 20, 30, 10]
+# res=arr.count(10)
+# res1=arr.count(20)
+# res2=arr.count(30)
+# print("30 =>",res,"\n \n","20 =>",res1,"\n \n","30 =>",res2)
+#
